@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-green: #1E7A3C;
+  --color-accent-green: #4CAF50;
+  --color-accent-bright: #7ED957;
+  --color-dark-base: #0B1F14;
+  --color-dark-surface: #12291C;
+  --color-off-white: #F6F8F5;
+  --color-white: #FFFFFF;
+  --color-text-light: #101913;
+  --color-text-dark: #F3F7F3;
+  --color-muted-light: #5B6B60;
+  --color-muted-dark: #9FB3A6;
+  --color-border-light: #E1E8E2;
+  --color-border-dark: #1E3A28;
+  --color-cta: #2E9E4F;
+  --color-cta-hover: #26843F;
+  --radius-card: 16px;
+  --section-spacing-mobile: 56px;
+  --section-spacing-desktop: 96px;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-off-white);
+  color: var(--color-text-light);
+  font-family: var(--font-inter), 'Segoe UI', sans-serif;
+  letter-spacing: -0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html[dir='rtl'] {
+  direction: rtl;
+}
+
+html[dir='rtl'] body {
+  text-align: start;
+}
+
+html[lang='ar'],
+html[lang='ar'] body {
+  font-family: var(--font-ibm-plex-sans-arabic), 'Segoe UI', sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-manrope), 'Segoe UI', sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), 'Segoe UI', sans-serif;
+}
+
+html[lang='ar'] .font-heading,
+html[lang='ar'] .font-sans,
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3,
+html[lang='ar'] h4,
+html[lang='ar'] h5,
+html[lang='ar'] h6,
+html[lang='ar'] p,
+html[lang='ar'] span,
+html[lang='ar'] a,
+html[lang='ar'] button {
+  font-family: var(--font-ibm-plex-sans-arabic), 'Segoe UI', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-manrope), 'Segoe UI', sans-serif;
+  letter-spacing: -0.04em;
+  margin: 0;
+  color: var(--color-text-light);
+}
+
+p {
+  margin: 0;
+}
+
+button,
+a {
+  transition: all 200ms ease-out;
+}
+
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3,
+html[lang='ar'] h4,
+html[lang='ar'] h5,
+html[lang='ar'] h6 {
+  letter-spacing: -0.02em;
+}
+ 
